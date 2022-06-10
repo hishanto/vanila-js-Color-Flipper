@@ -1,7 +1,12 @@
 const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
 const btn = document.getElementById('btn');
-const btn = document.querySelector('.color');
+const color = document.querySelector('.color');
 
 
-
-btn.addEventListener
+//Add event listener to the button
+btn.addEventListener('click', function () {
+    // console.log(document.body);
+    const randomNumber = 2;
+    document.body.style.backgroundColor = colors[randomNumber];
+    color.textContent = colors[randomNumber];
+});
